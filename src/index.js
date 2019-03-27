@@ -15,7 +15,7 @@ const get = {
 };
 
 module.exports = ( param, prop, origins = [ 'body', 'query', 'header', 'cookie' ] ) => {
-	return ( ctx, next ) => {
+    return ( ctx, next ) => {
         for( const item of origins ) {
             const value = get[ item ]( ctx, param ); 
             if( value !== false ) {
@@ -24,5 +24,5 @@ module.exports = ( param, prop, origins = [ 'body', 'query', 'header', 'cookie' 
             }
         }
         return next();
-	};
+    };
 }
