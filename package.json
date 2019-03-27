@@ -1,0 +1,44 @@
+{
+  "name": "ynn-middleware-hierarchical-param",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "directories": {
+      "src" : "src",
+    "test": "test"
+  },
+  "scripts": {
+      "start" : "nodemon src",
+      "debug" : "nodemon src --debugging=true",
+    "test": "jest --forceExit",
+    "tw" : "npm run test-watch",
+    "test-watch" : "jest --watch",
+    "test-cov" : "jest --coverage --runInBand --forceExit --detectOpenHandles",
+    "lint" : "eslint src --cache --ignore-path .eslintignore",
+    "precommit-msg" : "echo 'Pre-commit checks...' && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ynnjs/ynn-middleware-hierarchical-param.git"
+  },
+  "keywords": [
+    "param",
+    "paramater",
+    "hierarchical",
+    "ynn",
+    "middleware"
+  ],
+  "author": "LvChengbin <lvchengbin59@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ynnjs/ynn-middleware-hierarchical-param/issues"
+  },
+  "homepage": "https://github.com/ynnjs/ynn-middleware-hierarchical-param#readme",
+  "devDependencies": {
+    "jest": "^24.5.0",
+    "nodemon": "^1.18.10",
+    "pre-commit": "^1.2.2",
+    "supertest": "^4.0.2",
+    "ynn": "0.0.43"
+  }
+}
